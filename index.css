@@ -1,0 +1,135 @@
+/*   CSS normalize   */
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #000;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+.wrapper {
+    max-width: 1440px;
+    overflow: hidden;
+}
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+
+/* styles */
+
+.app__body{
+   max-width: 400px;
+   margin: 30px auto;
+   padding: 30px 20px;
+   border-radius: 10px;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   display: flex;
+   flex-direction:column;
+   justify-content: center;
+}
+.app__body h1{
+    font-size: 19px;
+    font-weight: bold;
+    text-align:center;
+    margin-bottom: 30px;
+}
+.app__form{
+    margin-bottom: 40px;
+    display: flex;
+    align-items:center;
+}
+.app__form input{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    text-align:center;
+    margin: 0 15px 0 0;
+    padding: 8px 15px;
+    width: 100%;
+}
+.app__form button{
+    padding: 8px 10px;
+    border-radius: 10px;
+    cursor:pointer;
+    background:rgb(214, 212, 212);
+    font-weight:bold;
+}
+.app__form button:hover{
+    background: grey;
+    color:#fff;
+}
+.app__list{
+    margin: 0 auto 40px auto;
+
+}
+.app__list li{
+  list-style: none;
+  position:relative;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+ul li::before{
+    content: "";
+    position:absolute;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    top: -2px;
+    left: -45px;
+    background-color:blueviolet;
+}
+ul li.checked{
+   text-decoration: line-through;
+}
+ul li.checked::before{
+    background: green;
+}
+ul li span{
+    position: absolute;
+    top: 0;
+    right: -40px;
+    width: 15px;
+    height: 15px;
+    color:red;
+    z-index: 5;
+}
+ul li span:hover{
+    cursor:pointer;
+    transform: scale(1.3)
+}
+
